@@ -1,0 +1,17 @@
+.SecondSlide{
+    width: 100%;
+    height: 100vh;
+
+    @include flex-col-evenly;
+
+    div{
+        width: 60%;
+        height: 30%;
+    }
+
+    .card-container{
+        height: 50%;
+
+        @include flex-between;
+    }
+}

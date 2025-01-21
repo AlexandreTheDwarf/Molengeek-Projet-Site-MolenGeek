@@ -24,3 +24,10 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin flex-col-evenly{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
