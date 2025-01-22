@@ -1,6 +1,8 @@
 // main.js
 
 import { carrousel } from './carrousel.js'; 
+import { calendar } from './calendar.js';
 
-// Appeler la fonction carrousel
+// Appeler les functions
 carrousel();
+calendar();

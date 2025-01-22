@@ -147,6 +147,39 @@ section {
   align-items: center;
 }
 
+.FourthSlide {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.FourthSlide h2 {
+  margin-top: 2%;
+  height: 5%;
+  text-align: center;
+}
+
+.FifthSlide {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.FifthSlide div {
+  width: 48%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.FifthSlide div iframe {
+  width: 100%;
+  height: 80%;
+}
+
 nav {
   height: 10vh;
   display: flex;
@@ -278,4 +311,113 @@ nav .NavDivThree {
   justify-content: space-evenly;
   align-items: center;
   align-items: flex-start;
+}
+
+#calendar {
+  width: 80%;
+  height: 70%;
+}
+
+.fc-event-title {
+  white-space: normal; /* Permet au texte de se répartir sur plusieurs lignes */
+  word-wrap: break-word; /* Permet de couper le texte si trop long */
+  max-width: 100%; /* Assure que le texte occupe tout l'espace disponible */
+}
+
+/* Texte pour les événements débutants */
+.event-info-tic .fc-event-main,
+.event-python-deb .fc-event-main,
+.event-photoshop-deb .fc-event-main,
+.event-wordPress-deb .fc-event-main,
+.event-adWords-deb .fc-event-main,
+.event-analytics-deb .fc-event-main,
+.event-reseauxSoc-deb .fc-event-main,
+.event-html-deb .fc-event-main,
+.event-indesign-deb .fc-event-main,
+.event-shopify-deb .fc-event-main,
+.event-ilustrator-deb .fc-event-main,
+.event-audition-deb .fc-event-main,
+.event-javascript-deb .fc-event-main,
+.event-afterEffect-deb .fc-event-main {
+  color: #000 !important; /* Texte noir */
+}
+
+/* Texte pour les événements avancés */
+.event-premierePro-deb .fc-event-main,
+.event-wordPress-avance .fc-event-main,
+.event-reseauxSoc-avance .fc-event-main,
+.event-shopify-avance .fc-event-main {
+  color: #fff !important; /* Texte blanc */
+}
+
+.event-info-tic {
+  background-color: #BBE1FA;
+}
+
+.event-python-deb {
+  background-color: #FFD166;
+}
+
+.event-photoshop-deb {
+  background-color: #E9C46A;
+}
+
+.event-premierePro-deb {
+  background-color: #E63946;
+}
+
+.event-wordPress-deb {
+  background-color: #8ECAE6;
+}
+
+.event-wordPress-avance {
+  background-color: #219EBC;
+}
+
+.event-adWords-deb {
+  background-color: #B7E4C7;
+}
+
+.event-analytics-deb {
+  background-color: #F9C74F;
+}
+
+.event-reseauxSoc-deb {
+  background-color: #A8DADC;
+}
+
+.event-html-deb {
+  background-color: #FEC5BB;
+}
+
+.event-indesign-deb {
+  background-color: #F1C0E8;
+}
+
+.event-shopify-deb {
+  background-color: #D4A5A5;
+}
+
+.event-ilustrator-deb {
+  background-color: #FFCDB2;
+}
+
+.event-reseauxSoc-avance {
+  background-color: #457B9D;
+}
+
+.event-shopify-avance {
+  background-color: #774936;
+}
+
+.event-audition-deb {
+  background-color: #ADB5BD;
+}
+
+.event-javascript-deb {
+  background-color: #FFD700;
+}
+
+.event-afterEffect-deb {
+  background-color: #C2A7FF;
 }/*# sourceMappingURL=style.css.map */
