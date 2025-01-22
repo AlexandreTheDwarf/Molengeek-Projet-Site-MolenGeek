@@ -1,0 +1,50 @@
+.carousel {
+    width: 100%;
+    height: 100%; // Le carrousel prend toute la hauteur de la section
+    overflow: hidden;
+    position: relative;
+
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out; // Transition fluide
+        width: 300%; // Trois slides, donc 300% de largeur
+        height: 100%; // Les slides prennent toute la hauteur de la section
+    }
+
+    .slide {
+        width: 33%;; // Chaque slide prend 100% de la largeur visible
+        height: 100%; // Chaque slide prend toute la hauteur de la section
+        font-size: 24px;
+        font-weight: bold;
+        color: black;
+
+        @include flex-col-evenly;
+
+        div{
+            width: 80%;
+            height: 50%;
+
+            @include flex-between;
+
+            div{
+                width: 45%;
+                height: 100%;
+
+                @include flex-col-evenly;
+                align-items: flex-start;
+
+                img{
+                    width: 90%;
+                }
+
+                ul{
+                    height: 75%;
+                    width: 100%;
+                    @include flex-col-evenly;
+                    align-items: flex-start;
+                }
+            }
+        }
+        
+    }
+}
