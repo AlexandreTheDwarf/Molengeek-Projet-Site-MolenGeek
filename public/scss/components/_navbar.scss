@@ -1,20 +1,107 @@
-nav{
+nav {
     height: 10vh;
-
-    @include flex-between;
-
-    div{
-        @include flex-center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #1e1e2f, #34344a);
+    padding: 0 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #fff;
+  
+    div {
+      display: flex;
+      align-items: center;
     }
-    .NavDivOne{
-        width: 20%;
+  
+    .NavDivOne {
+      img {
+        max-height: 60%;
+        transition: transform 0.3s ease-in-out;
+  
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
     }
-    .NavDivTwo{
+  
+    .NavDivTwo {
         width: 50%;
-
-        @include flex-between;
+        display: flex;
+        justify-content: space-around;
+      
+        a,
+        .dropbtn {
+          color: #fff;
+          text-decoration: none;
+          font-size: 1rem;
+          padding: 0.5rem 1rem;
+          transition: background 0.3s, color 0.3s;
+          border-radius: 5px;
+      
+          &:hover {
+            background: #5252ff;
+            color: #fff;
+          }
+        }
+      
+        .dropbtn {
+          background: transparent; // Fond transparent par défaut
+          border: none;
+          cursor: pointer;
+      
+          &:hover {
+            background: #5252ff; // Fond coloré au survol
+          }
+        }
+      
+        .dropdown {
+          position: relative;
+      
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background: #fff;
+            color: #1e1e2f;
+            min-width: 160px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+            border-radius: 5px;
+            overflow: hidden;
+      
+            a {
+              padding: 0.5rem 1rem;
+              display: block;
+              color: #1e1e2f;
+              text-decoration: none;
+              transition: background 0.3s;
+      
+              &:hover {
+                background: #5252ff;
+                color: #fff;
+              }
+            }
+          }
+      
+          &:hover .dropdown-content {
+            display: block;
+          }
+        }
+      }
+  
+    .NavDivThree {
+      a {
+        background: #5252ff;
+        color: #fff;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        transition: background 0.3s ease, transform 0.2s ease-in-out;
+  
+        &:hover {
+          background: #34344a;
+          transform: scale(1.05);
+        }
+      }
     }
-    .NavDivThree{
-        width: 20%;
-    }
-}
+  }
+  

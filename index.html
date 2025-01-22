@@ -46,13 +46,23 @@
     <main>
         <section class="FirstSlide">
             <div class="Background">
-                <div class="Overlay"></div>
-                <div class="Content">
-                    <h2>Molengeek</h2>
-                    <p>L'Ecosysteme qui rend le digital accessible pour tous</p>
-                </div>
+              <!-- Vidéo en arrière-plan -->
+              <video autoplay loop muted playsinline class="VideoBackground">
+                <source src="./public/video/cover.webm" type="video/webm" />
+                <!-- Message si la vidéo ne charge pas -->
+                Votre navigateur ne supporte pas la vidéo.
+              </video>
+          
+              <!-- Overlay sombre -->
+              <div class="Overlay"></div>
+          
+              <!-- Contenu texte -->
+              <div class="Content">
+                <h2>Molengeek</h2>
+                <p>L'Ecosystème qui rend le digital accessible pour tous</p>
+              </div>
             </div>
-        </section>
+        </section>          
         <section class="SecondSlide">
             <div class="text-container">
                 <h2>MolenGeek, c’est quoi?</h2>
