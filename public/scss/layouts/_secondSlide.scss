@@ -4,13 +4,18 @@
 
     @include flex-col-evenly;
 
-    div{
+    .text-container{
         width: 60%;
         height: 30%;
+
+        text-align: center;
+
+        @include flex-col-evenly;
     }
 
     .card-container{
-        height: 50%;
+        width: 60%;
+        height: 60%;
 
         @include flex-between;
     }

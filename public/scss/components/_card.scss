@@ -1,3 +1,12 @@
 .card{
-    @include flex-col-evenly
+    width: 30%;
+    height: 90%;
+    margin-bottom: 10%;
+
+    @include flex-col-evenly;
+    
+
+    img{
+        width: 80%;
+    }
 }
