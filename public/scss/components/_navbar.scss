@@ -23,6 +23,14 @@ nav {
         }
       }
     }
+
+    // Icône du burger menu (caché sur desktop)
+    .burger-menu {
+      display: none;
+      font-size: 2rem;
+      cursor: pointer;
+      color: white;
+    }
   
     .NavDivTwo {
         width: 50%;
@@ -104,4 +112,34 @@ nav {
       }
     }
   }
+
+// Cacher les liens sur tablette/mobile
+@media (max-width: 768px) {
+  nav{
+    .NavDivTwo {
+      display: none; // Menu caché par défaut
+      flex-direction: column;
+      background: linear-gradient(90deg, #1e1e2f, #34344a);
+      position: absolute;
+      top: 10vh; // Sous la barre de navigation
+      left: 0;
+      width: 100%;
+      z-index: 100;
+      padding: 1rem 0;
+    }
   
+    // Icône burger visible
+    .burger-menu {
+      display: block;
+      color: white;
+      font-size: 2rem;
+      cursor: pointer;
+      z-index: 200; // S'assurer qu'il soit au-dessus des autres éléments
+    }  
+  
+    // Menu visible quand on ajoute la classe .active
+    .NavDivTwo.active {
+      display: flex;
+    }
+  }
+}

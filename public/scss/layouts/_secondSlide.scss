@@ -34,3 +34,31 @@
   
     }
 }
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .SecondSlide {
+    padding: 2rem 1rem;
+
+    .card-container {
+      gap: 1rem;
+      justify-content: space-evenly;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .SecondSlide {
+    padding: 1.5rem 1rem;
+
+    .text-container{
+      p{
+        font-size: small;
+      }
+    }
+
+    .card-container {
+      gap: 0.8rem;
+    }
+  }
+}
