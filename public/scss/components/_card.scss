@@ -1,12 +1,50 @@
-.card{
-    width: 30%;
-    height: 90%;
-    margin-bottom: 10%;
+.card {
+    background: #ffffff; /* Fond blanc pour contraste */
+    border-radius: 12px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    overflow: hidden; /* Évite que l'image dépasse */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animations */
 
     @include flex-col-evenly;
-    
 
-    img{
-        width: 90%;
+    &:hover {
+      transform: translateY(-10px); /* Légère élévation au survol */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
+    }
+
+    /* Image */
+    img {
+      width: 100%;
+      height: 180px; /* Hauteur fixe pour uniformité */
+      object-fit: cover; /* Adapte l'image sans déformation */
+    }
+
+    /* Contenu texte */
+    span {
+      display: block;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #333; /* Gris foncé */
+      margin: 1rem 0 0.5rem;
+      text-align: center;
+    }
+
+    /* Bouton "En Savoir Plus" */
+    a {
+      display: inline-block;
+      text-align: center;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #fff; /* Texte blanc */
+      background: #6f86d6; /* Couleur moderne */
+      border-radius: 8px;
+      text-decoration: none;
+      margin: 0 1rem 1rem;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background: #52b2cf; /* Change légèrement de couleur */
+      }
     }
 }

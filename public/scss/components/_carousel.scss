@@ -1,50 +1,95 @@
 .carousel {
-    width: 100%;
-    height: 100%; // Le carrousel prend toute la hauteur de la section
+    width: 90%;
+    height: 80%; /* Ajuste pour laisser un peu d'espace */
     overflow: hidden;
     position: relative;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5%;
 
     .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 300%; /* 3 slides = 300% */
+      height: 100%;
+
+      .slide {
+        width: 33.33%;
+        height: 100%;
         display: flex;
-        transition: transform 0.5s ease-in-out; // Transition fluide
-        width: 300%; // Trois slides, donc 300% de largeur
-        height: 100%; // Les slides prennent toute la hauteur de la section
-    }
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+        text-align: center;
+        background: #fff;
+        border-radius: 12px;
 
-    .slide {
-        width: 33%;; // Chaque slide prend 100% de la largeur visible
-        height: 100%; // Chaque slide prend toute la hauteur de la section
-        font-size: 24px;
-        font-weight: bold;
-        color: black;
-
-        @include flex-col-evenly;
-
-        div{
-            width: 80%;
-            height: 50%;
-
-            @include flex-between;
-
-            div{
-                width: 45%;
-                height: 100%;
-
-                @include flex-col-evenly;
-                align-items: flex-start;
-
-                img{
-                    width: 90%;
-                }
-
-                ul{
-                    height: 75%;
-                    width: 100%;
-                    @include flex-col-evenly;
-                    align-items: flex-start;
-                }
-            }
+        h2 {
+          font-size: 2rem;
+          font-weight: bold;
+          color: #333;
         }
-        
+
+        div {
+          display: flex;
+          gap: 1.5rem;
+          flex-wrap: wrap;
+          justify-content: center;
+
+          div {
+            flex: 1 1 45%; /* Ajuste la largeur selon la taille de l'écran */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+
+            img {
+              width: 100%;
+              height: auto;
+              border-radius: 8px;
+              object-fit: cover;
+              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            p {
+              font-size: 1rem;
+              color: #555;
+              line-height: 1.6;
+            }
+
+            ul {
+              list-style: none;
+              padding: 0;
+
+              li {
+                font-size: 1rem;
+                color: #777;
+                margin-bottom: 0.5rem;
+
+                &:before {
+                  content: '→ ';
+                  color: #6f86d6; /* Accent moderne */
+                }
+              }
+            }
+          }
+        }
+
+        a {
+          display: inline-block;
+          padding: 0.75rem 1.5rem;
+          font-size: 1rem;
+          color: #fff;
+          background: #6f86d6;
+          border-radius: 8px;
+          text-decoration: none;
+          transition: background 0.3s ease;
+
+          &:hover {
+            background: #52b2cf;
+          }
+        }
+      }
     }
 }

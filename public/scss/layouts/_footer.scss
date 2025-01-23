@@ -1,0 +1,132 @@
+.footer {
+    background-color: #f9f9f9;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+    height: 100vh;
+  
+    .newsletter {
+      height: 20%;
+      width: 90%;
+      text-align: center;
+      padding: 1rem;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+      h2 {
+        margin-bottom: 1rem;
+      }
+  
+      input {
+        width: 70%;
+        padding: 0.5rem;
+        margin-right: 0.5rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+  
+      button {
+        padding: 0.5rem 1rem;
+        background-color: #48c6ef;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #36a9d8;
+        }
+      }
+    }
+  
+    .partners {
+      height: 30%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+
+      h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+  
+      .carousel {
+        overflow: hidden;
+        position: relative;
+        width: 90%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+  
+        .carousel-track {
+          display: flex;
+          gap: 2rem;
+          animation: scroll 15s linear infinite;
+  
+          img {
+            height: 100px;
+            max-width: 200px;
+            object-fit: contain;
+          }
+        }
+  
+        @keyframes scroll {
+          0% {
+            transform: translateX(0%);
+          }
+          25% {
+            transform: translateX(-50%);
+          }
+          50%{
+            transform: translateX(0%);
+          }
+          100%{
+            transform: translateX(50%);
+          }
+        }
+      }
+    }
+  
+    .social {
+      height: 40%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+
+      background: linear-gradient(90deg, #1e1e2f, #34344a);
+
+        .icons{
+            width: 50%;
+            height: 30%;
+
+            @include flex-between;
+        }
+
+        .credit{
+            width: 50%;
+            height: 60%;
+            margin-bottom: 1%;
+
+            @include flex-col-evenly;
+
+            img {
+                height: 50px;
+            }
+        
+            p {
+                text-align: center;
+                color: whitesmoke;
+            }    
+        }    
+    }
+  }
+  
