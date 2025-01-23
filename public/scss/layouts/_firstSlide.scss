@@ -71,3 +71,18 @@
     }
   }
 }
+
+@media (max-width: 480px){
+  .FirstSlide{
+    .Background{
+      .Content{
+        h2{
+          font-size: 3rem;
+        }
+        p{
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

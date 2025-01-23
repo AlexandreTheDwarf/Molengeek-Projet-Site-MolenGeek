@@ -68,4 +68,15 @@
       }
     }
   }
-  
+
+@media (max-width: 480px){
+  .FifthSlide{
+    flex-direction: column;
+    .map{
+      display: none;
+    }
+    .contact{
+      width: 80%;
+    }
+  }
+}

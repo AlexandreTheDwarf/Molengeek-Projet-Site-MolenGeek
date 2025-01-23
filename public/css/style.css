@@ -139,6 +139,14 @@ section {
   max-width: 600px;
 }
 
+@media (max-width: 480px) {
+  .FirstSlide .Background .Content h2 {
+    font-size: 3rem;
+  }
+  .FirstSlide .Background .Content p {
+    font-size: 1rem;
+  }
+}
 .SecondSlide {
   padding: 3rem 1rem;
   display: flex;
@@ -277,6 +285,17 @@ section {
   text-decoration: underline;
 }
 
+@media (max-width: 480px) {
+  .FifthSlide {
+    flex-direction: column;
+  }
+  .FifthSlide .map {
+    display: none;
+  }
+  .FifthSlide .contact {
+    width: 80%;
+  }
+}
 .footer {
   background-color: #f9f9f9;
   padding: 2rem 1rem;
@@ -396,6 +415,17 @@ section {
   color: whitesmoke;
 }
 
+@media (max-width: 480px) {
+  .footer .newsletter input {
+    width: 50%;
+  }
+  .footer .social {
+    margin-bottom: 15px;
+  }
+  .footer .social .credit img {
+    height: 35px;
+  }
+}
 nav {
   height: 10vh;
   display: flex;
@@ -653,12 +683,13 @@ nav .NavDivThree a:hover {
 }
 .carousel .slides .slide div {
   display: flex;
+  width: 100%;
   gap: 1.5rem;
   flex-wrap: wrap;
   justify-content: center;
 }
 .carousel .slides .slide div div {
-  flex: 1 1 45%; /* Ajuste la largeur selon la taille de l'écran */
+  width: 45%; /* Ajuste la largeur selon la taille de l'écran */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -704,6 +735,26 @@ nav .NavDivThree a:hover {
   background: #52b2cf;
 }
 
+/* Responsiveness */
+@media (max-width: 768px) {
+  .carousel .slides .slide div .cefa p {
+    font-size: small;
+  }
+}
+@media (max-width: 480px) {
+  .carousel .slides .slide div .slide-image {
+    width: 0%;
+  }
+  .carousel .slides .slide div .slide-image img {
+    display: none;
+  }
+  .carousel .slides .slide div .slide-text {
+    width: 100%;
+  }
+  .carousel .slides .slide div .cefa p {
+    font-size: small;
+  }
+}
 #calendar {
   width: 80%;
   height: 70%;

@@ -129,4 +129,21 @@
         }    
     }
   }
-  
+
+@media (max-width: 480px){
+  .footer{
+    .newsletter{
+      input{
+        width: 50%;
+      }
+    }
+    .social{
+      margin-bottom: 15px;
+      .credit{
+        img{
+          height: 35px;
+        }
+      }
+    }
+  }
+}

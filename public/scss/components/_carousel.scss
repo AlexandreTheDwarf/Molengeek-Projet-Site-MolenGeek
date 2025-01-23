@@ -33,12 +33,13 @@
 
         div {
           display: flex;
+          width: 100%;
           gap: 1.5rem;
           flex-wrap: wrap;
           justify-content: center;
 
           div {
-            flex: 1 1 45%; /* Ajuste la largeur selon la taille de l'écran */
+            width: 45%; /* Ajuste la largeur selon la taille de l'écran */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -92,4 +93,50 @@
         }
       }
     }
+}
+
+/* Responsiveness */
+
+@media (max-width: 768px) {
+  .carousel{
+    .slides{
+      .slide{
+        div{
+          .cefa{
+            p{
+              font-size: small;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 480px) {
+  .carousel{
+    .slides{
+      .slide{
+        div{
+          .slide-image{
+            width: 0%;
+
+            img{
+              display: none;
+            }
+          }
+          .slide-text{
+            width: 100%;
+          }
+          .cefa{
+            p{
+              font-size: small;
+            }
+          }
+        }
+  
+      }
+    }
+  }
 }
